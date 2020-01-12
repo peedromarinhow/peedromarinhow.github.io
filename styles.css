@@ -13,19 +13,19 @@ h2 {
 h1 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
-    color: #424242;
+    color: #707070;
 }
 
 h5 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
-    color: #424242;
+    color: #707070;
 }
 
 h6 {
     text-align: center;
     font-family: 'Roboto Mono', monospace;
-    color: #424242;
+    color: #707070;
 }
 
 p {
@@ -38,10 +38,14 @@ a {
     text-decoration: none;
 }
 
-.terms {
-    text-align: left;
-    color: #424242;
-    font-size: 60%;
+button {
+    background-color: #212121;
+    color: #fafafa;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #fafafa;
+    font-family: 'Roboto Mono', monospace;
+    outline: none;
 }
 
 .row {
