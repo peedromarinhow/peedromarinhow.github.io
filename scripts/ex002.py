@@ -12,7 +12,7 @@ from datetime import datetime
 
 #set up our Oauth infotmation
 config = configparser.ConfigParser()
-config.read("auth.ini")
+config.read("C:\\Users\\peedr\\Documents\\code\\etc\\ex001\\auth.ini")
 
 #get the Oauth information
 client_id     = config.get("credentials", "client_id")
