@@ -1,0 +1,12 @@
+.row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 50px;
+    grid-auto-rows: minmax(auto, auto);
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
