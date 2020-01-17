@@ -82,5 +82,4 @@ print(); print()
 
 #print the html elements for copying
 for image in sorted_images:
-    print
-    (f"""<div>\n\t<img src = https://i.imgur.com/{image["name"]}h.jpg class = "center">\n\t<p> {image["created"]} </p>\n</div>""")
+    prin(f"""<div>\n\t<img src = https://i.imgur.com/{image["name"]}h.jpg class = "center">\n\t<p> {image["created"]} </p>\n</div>""")
