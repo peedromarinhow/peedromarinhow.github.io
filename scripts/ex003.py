@@ -10,7 +10,7 @@ import os
 
 #path to images
 inpath  = input("[path to images]:")
-outpath = "\\photos\\sorted"
+outpath = "/photos/sorted"
 
 #navigate all files in dir
 for filename in os.listdir(inpath):
@@ -39,8 +39,8 @@ for filename in os.listdir(inpath):
 
         #print the name
         print(name)
-
+]
         #save the picture
         picture.save(os.path.join(outpath, name))
 
-print("[renamed images are located in \"C:\\photos\\sorted\"]")
+print("[renamed images are located in \"/photos/sorted\"]")
