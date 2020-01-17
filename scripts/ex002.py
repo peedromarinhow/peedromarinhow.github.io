@@ -5,6 +5,22 @@
 #   into a row of html elements sorted by
 #   date and time.
 #
+#   To use this script you should create a
+#   auth.ini file in the following form:
+#   
+#   [credentials]
+#   client_id      = xxxxxxxxxxxxxxx
+#   client_secret  = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+#   imgur_username = xxx
+#   imgur_password = ***
+#
+#   and then run the script, when prompted,
+#   you should follow the link printed to the
+#   console and authorize the access by logging
+#   in to your imgur account, then copy the pin
+#   and paste it in your console, press enter
+#
+
 import configparser
 import imgurpython
 import time
@@ -12,7 +28,7 @@ from datetime import datetime
 
 #set up our Oauth infotmation
 config = configparser.ConfigParser()
-config.read("C:\\Users\\peedr\\Documents\\code\\etc\\ex001\\auth.ini")
+config.read("auth.ini")
 
 #get the Oauth information
 client_id     = config.get("credentials", "client_id")
@@ -66,4 +82,5 @@ print(); print()
 
 #print the html elements for copying
 for image in sorted_images:
-    print(f"""<div><div class = "image"><img src = https://i.imgur.com/{image["name"]}h.jpg class = "center"></div><p> {image["created"]} </p></div>""")
+    print
+    (f"""<div>\n\t<img src = https://i.imgur.com/{image["name"]}h.jpg class = "center">\n\t<p> {image["created"]} </p>\n</div>""")
