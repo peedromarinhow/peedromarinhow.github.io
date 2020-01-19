@@ -39,7 +39,7 @@ for filename in os.listdir(inpath):
 
         #print the name
         print(name)
-]
+
         #save the picture
         picture.save(os.path.join(outpath, name))
 
