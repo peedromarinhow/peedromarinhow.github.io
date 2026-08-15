@@ -1,0 +1,1 @@
+typst compile typst/html.typ --features bundle --features html --format bundle html\
