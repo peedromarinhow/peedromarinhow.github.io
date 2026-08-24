@@ -25,6 +25,74 @@ math {
   font-family: 'Euler Math';
 }
 
+math[display="block"] {
+  margin-top:    1em;
+  margin-bottom: 1em;
+}
+
 html {
   font-family: 'Libertinus Sans';
+  font-size:    medium;
+}
+
+body {
+  display:     grid;
+  place-items: center;
+  margin:      0;
+}
+
+section {
+    display: none;
+}
+
+section:target {
+    display: block;
+}
+
+header {
+  img {
+    max-width: 75vh;
+    margin-bottom: 2em;
+  }
+
+  font-size: large;
+  width: 75vh;
+}
+
+main {
+  text-align: justify;
+  hyphens:    auto;
+  width:      75vh;
+}
+
+figure {
+  width: 100%;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure.box {
+  p:first-of-type {
+    margin-top: 0;
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  width: 100%;
+  transform: translate(-0.75em, 0);
+
+  padding: 0.75em;
+  border-radius:  0.15em;
+  border-width:   1pt;
+  border-style:   solid;
+  border-color: black;
+}
+
+figcaption.side {
+  width: 8em;
+  text-align: left;
+  position: absolute;
+  transform: translate(-10em, 0)
 }

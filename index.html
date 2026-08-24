@@ -1,7 +1,75 @@
-<!--
-Source - https://stackoverflow.com/a/25327759
-Posted by David Jacquel, modified by community. See post 'Timeline' for change history
-Retrieved 2026-08-15, License - CC BY-SA 4.0
--->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Index</title><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
 
-<meta http-equiv="refresh" content="0; url=https://peedromarinhow.github.io/html/index.html">
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><body><head><link rel="stylesheet" href="./css/main.css"></head><header><p><img src="media/header.jpg"></p><p><a href="#">Início</a></p></header><main><h2>Pedro da Cruz</h2><p><a href="medida.html">medida</a></p><p><a href="tensores.html">tensores</a></p><p><a href="analise.html">análise</a></p></main></body></html>

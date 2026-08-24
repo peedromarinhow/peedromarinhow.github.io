@@ -1,14 +1,23 @@
 #import "lib.typ": *
 #show: style
 
-#let css = html.link(rel: "stylesheet", href: "../css/main.css")
-
 #document("index.html", title: [Index])[
-  #html.head(css)
-  #include "index.typ"
-]
+  #html.head(Styles)
 
-#document("algebra.html", title: [algebra])[
-  #html.head(css)
-  #include "algebra.typ"
-]<algebra>
+  #Header
+  
+  #html.main[
+
+    = Pedro da Cruz
+
+    #link(<medida>)[medida]
+
+    #link(<tensores>)[tensores]
+
+    #link(<analise>)[análise]
+  ]
+]<index>
+
+#document("medida.html", include "medida.typ")<medida>
+#document("tensores.html", include "tensores.typ")<tensores>
+#document("analise.html", include "analise.typ")<analise>
