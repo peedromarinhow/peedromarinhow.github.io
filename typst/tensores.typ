@@ -1,5 +1,5 @@
 #import "lib.typ": *
-#show: HtmlPage
+#show: style
 
 = Tensores
 
@@ -27,6 +27,8 @@
 No que segue, $U, V, W$, etc denotam espaços vetoriais de dimensão finita sobre o corpo dos reais.
 
 == transformações lineares e isomorfismos
+
+#figure($max{x, y} < 1$, caption: [um quadrado.])
 
 #def(caption: [transformações lineares])[
   Uma _transformação linear_ é uma função linear entre espaços vetoriais.

@@ -1,1 +1,1 @@
-typst compile typst/html.typ --features bundle --features html --format bundle --root ./ ./
+typst compile typst/tensores.typ --features html medida.html

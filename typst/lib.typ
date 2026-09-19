@@ -105,6 +105,8 @@
   })
 
   show figure: it => {
+    
+
     if it.kind == "definição" or it.kind == "teorema" {
       html.figure(class: "box", thmcap(it.caption) + it.body)
     }
@@ -124,23 +126,8 @@
     }
   }
 
-  doc
-}
+  let sty = html.link(rel: "stylesheet", href: "./css/main.css")
 
-#let Styles = html.link(rel: "stylesheet", href: "./css/main.css")
-#let Header = html.header[
-  #html.img(src: "media/header.jpg")
-
-  #link(<index>)[Início]
-]
-
-#let HtmlPage(Body) = {
-  counter(figure.where(kind: "teorema")).update(0)
-  counter(figure.where(kind: "lema")).update(0)
-  counter(figure.where(kind: "definição")).update(0)
-  counter(figure.where(kind: "exemplo")).update(0)
-
-  html.head(Styles)
-  Header
-  html.main(Body)
+  html.head(sty)
+  html.main(doc)
 }

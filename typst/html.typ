@@ -1,23 +1,24 @@
-#import "lib.typ": *
-#show: style
+// #import "lib.typ": *
+// #show: style
 
-#document("index.html", title: [Index])[
-  #html.head(Styles)
+// #document("index.html", title: [Index])[
+//   #html.head(Styles)
 
-  #Header
+//   #Header
   
-  #html.main[
+//   #html.main[
 
-    = Pedro da Cruz
+//     = Pedro da Cruz
 
-    #link(<medida>)[medida]
+//     #link(<medida>)[medida]
 
-    #link(<tensores>)[tensores]
+//     #link(<tensores>)[tensores]
 
-    #link(<analise>)[análise]
-  ]
-]<index>
+//     #link(<analise>)[análise]
+//   ]
+// ]<index>
 
-#document("medida.html", include "medida.typ")<medida>
+#document("medida.html",   include "index.typ")<medida>
+#document("medida.html",   include "medida.typ")<medida>
 #document("tensores.html", include "tensores.typ")<tensores>
-#document("analise.html", include "analise.typ")<analise>
+#document("analise.html",  include "analise.typ")<analise>
