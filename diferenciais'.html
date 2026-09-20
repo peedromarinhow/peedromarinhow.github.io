@@ -1,0 +1,75 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="./main.css"><title>Formalizando os diferenciais</title><style>/* Alignment */
+mtable.right-align mtd,
+mtable mtd.right-align,
+mtable.left-align mtd.right-align,
+mtable.aligned mtd:nth-child(odd) {
+  justify-items: end;
+  text-align: right;
+}
+mtable.cases mtd,
+mtable.left-align mtd,
+mtable mtd.left-align,
+mtable.aligned mtd:nth-child(even),
+math:is(:not([display])) > mtable.multiline-equation mtd {
+  justify-items: start;
+  text-align: left;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.left-flush {
+  padding-left: 0;
+}
+mtable.cases mtd,
+mtable.aligned mtd,
+mtable mtd.flushed,
+mtable mtd.right-flush {
+  padding-right: 0;
+}
+
+/* Tables */
+mtable {
+  math-style: inherit;
+}
+mtd {
+  math-depth: auto-add;
+  math-style: compact;
+  math-shift: compact;
+}
+
+/* Equations */
+mtable.multiline-equation mtd {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+  padding: 0;
+}
+math > mtable.multiline-equation mtr:not(:last-child) mtd {
+  padding-bottom: 0.5em;
+}
+
+/* Fractions */
+mfrac {
+  padding-inline: 0;
+  margin-inline: 0.1em;
+}
+
+/* Accents */
+mover[accent="true" i] > :first-child {
+  font-feature-settings: "dtls";
+}
+mover.dotted[accent="true" i] > :first-child {
+  font-feature-settings: "dtls" 0;
+}
+
+/* Other rules for scriptlevel, displaystyle and math-shift */
+munder > :nth-child(2),
+munderover > :nth-child(2) {
+  math-shift: compact
+}
+munder[accentunder="true" i] > :not(:first-child),
+mover[accent="true" i] > :not(:first-child) {
+  math-depth: inherit;
+  math-style: inherit;
+  math-shift: inherit;
+}</style></head><header><img src="media/header.jpg"><nav><ul><li><a href="index.html">início</a></li><li><a href="sobre.html">sobre</a></li></ul></nav></header><body><main><h2>Formalizando os diferenciais</h2><math display="block"><mfrac><mrow><mo lspace="0em" rspace="0em">d</mo><mi>𝑦</mi></mrow><mrow><mo lspace="0em" rspace="0em">d</mo><mi>𝑥</mi></mrow></mfrac><mo>=</mo><mi>𝑓</mi><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mi>𝑔</mi><mrow><mo>(</mo><mi>𝑦</mi><mo>)</mo></mrow><mo stretchy="false">⟹</mo><mfrac><mn>1</mn><mrow><mi>𝑔</mi><mrow><mo>(</mo><mi>𝑦</mi><mo>)</mo></mrow></mrow></mfrac><mspace width="0.1667em"/><mo form="prefix" lspace="0em" rspace="0em">d</mo><mi>𝑦</mi><mo>=</mo><mi>𝑓</mi><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mspace width="0.1667em"/><mo form="prefix" lspace="0em" rspace="0em">d</mo><mi>𝑥</mi><mo stretchy="false">⟹</mo><mo form="prefix" lspace="0em">∫</mo><mfrac><mn>1</mn><mrow><mi>𝑔</mi><mrow><mo>(</mo><mi>𝑦</mi><mo>)</mo></mrow></mrow></mfrac><mspace width="0.1667em"/><mo form="prefix" lspace="0em" rspace="0em">d</mo><mi>𝑦</mi><mo>=</mo><mo form="prefix" lspace="0em">∫</mo><mi>𝑓</mi><mrow><mo>(</mo><mi>𝑥</mi><mo>)</mo></mrow><mspace width="0.1667em"/><mo form="prefix" lspace="0em" rspace="0em">d</mo><mi>𝑥</mi></math></main></body></html>

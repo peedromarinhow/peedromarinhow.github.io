@@ -1,22 +1,22 @@
 @font-face {
   font-family: 'Euler Math';
-  src: url('../fonts/Euler-Math.otf');
+  src: url('fonts/Euler-Math.otf');
 }
 @font-face {
   font-family: 'Libertinus Sans';
-  src: url('../fonts/LibertinusSans-Regular.ttf');
+  src: url('fonts/LibertinusSans-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: 'Libertinus Sans';
-  src: url('../fonts/LibertinusSans-Italic.ttf');
+  src: url('fonts/LibertinusSans-Italic.ttf');
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: 'Libertinus Sans';
-  src: url('../fonts/LibertinusSans-Bold.ttf');
+  src: url('fonts/LibertinusSans-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
@@ -36,32 +36,30 @@ html {
 }
 
 body {
-  display:     grid;
   place-items: center;
-  margin:      0;
-}
-
-section {
-    display: none;
-}
-
-section:target {
-    display: block;
 }
 
 header {
+  width: 75vh;
+  text-align: center;
+
   img {
     max-width: 75vh;
-    margin-bottom: 2em;
   }
 
-  font-size: large;
-  width: 75vh;
+  ul {
+    list-style-type: none;
+    overflow:        hidden;
+
+    li {
+      float: left;
+      padding-right: 2em;
+    }
+  }
 }
 
 main {
   text-align: justify;
-  hyphens:    auto;
   width:      75vh;
 }
 

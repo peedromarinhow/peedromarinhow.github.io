@@ -1,1 +1,0 @@
-typst compile typst/tensores.typ --features html medida.html
