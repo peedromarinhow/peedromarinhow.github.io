@@ -1,7 +1,10 @@
 #import "config.typ": *
 
-#set document(title: "home")
+#set document(title: "pedrodacruz")
 
 #show: style
 
-#link(<diferenciais>, [diferenciais])
+= postagens
+// - #link(<diferenciais>, [Formalizando os diferenciais])
+
+nenhuma postagem
